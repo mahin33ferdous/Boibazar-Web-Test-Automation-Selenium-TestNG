@@ -24,6 +24,9 @@ public class HomePage {
     WebElement uponnash;  
 	
 
+	
+	
+
 
 
 
@@ -33,6 +36,7 @@ public class HomePage {
 		Thread.sleep(10000);
 		bishoy.click();
 		Thread.sleep(3000);
+		
 		uponnash.click();
 		Thread.sleep(3000);
 	}

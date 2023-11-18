@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-18T04:18:23 GMT-11:00" name="Default suite" finished-at="2023-11-18T04:18:54 GMT-11:00" duration-ms="31106">
+  <suite started-at="2023-11-18T05:09:04 GMT-11:00" name="Default suite" finished-at="2023-11-18T05:09:51 GMT-11:00" duration-ms="46958">
     <groups>
     </groups>
-    <test started-at="2023-11-18T04:18:23 GMT-11:00" name="Default test" finished-at="2023-11-18T04:18:54 GMT-11:00" duration-ms="31106">
-      <class name="com.tests.HomePageTest">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.tests.HomePageTest@26794848]" started-at="2023-11-18T04:18:14 GMT-11:00" name="startBrowser" finished-at="2023-11-18T04:18:23 GMT-11:00" duration-ms="8773" status="PASS">
+    <test started-at="2023-11-18T05:09:04 GMT-11:00" name="Default test" finished-at="2023-11-18T05:09:51 GMT-11:00" duration-ms="46958">
+      <class name="com.tests.CategoryPageTest">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.tests.CategoryPageTest@4b2bac3f]" started-at="2023-11-18T05:09:02 GMT-11:00" name="startBrowser" finished-at="2023-11-18T05:09:04 GMT-11:00" duration-ms="1899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.HomePageTest@26794848]" started-at="2023-11-18T04:18:23 GMT-11:00" name="start" finished-at="2023-11-18T04:18:31 GMT-11:00" duration-ms="8571" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.tests.CategoryPageTest@4b2bac3f]" started-at="2023-11-18T05:09:04 GMT-11:00" name="start" finished-at="2023-11-18T05:09:15 GMT-11:00" duration-ms="10581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="SelectCategoryTest()[pri:0, instance:com.tests.HomePageTest@26794848]" started-at="2023-11-18T04:18:31 GMT-11:00" name="SelectCategoryTest" finished-at="2023-11-18T04:18:54 GMT-11:00" duration-ms="22514" status="PASS">
+        <test-method signature="AddToCart()[pri:1, instance:com.tests.CategoryPageTest@4b2bac3f]" started-at="2023-11-18T05:09:15 GMT-11:00" name="AddToCart" finished-at="2023-11-18T05:09:46 GMT-11:00" duration-ms="31510" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SelectCategoryTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.tests.HomePageTest@26794848]" started-at="2023-11-18T04:18:54 GMT-11:00" name="close" finished-at="2023-11-18T04:18:54 GMT-11:00" duration-ms="474" status="PASS">
+        </test-method> <!-- AddToCart -->
+        <test-method signature="ViewCart()[pri:2, instance:com.tests.CategoryPageTest@4b2bac3f]" started-at="2023-11-18T05:09:46 GMT-11:00" name="ViewCart" finished-at="2023-11-18T05:09:51 GMT-11:00" duration-ms="4841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewCart -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.tests.CategoryPageTest@4b2bac3f]" started-at="2023-11-18T05:09:51 GMT-11:00" name="close" finished-at="2023-11-18T05:09:52 GMT-11:00" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.tests.HomePageTest -->
+      </class> <!-- com.tests.CategoryPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
