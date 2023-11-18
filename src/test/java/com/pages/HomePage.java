@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import com.baseDrivers.PageDriver;
 
-public class LoginPage {
+public class HomePage {
 
-	public LoginPage() {
+	public HomePage() {
 		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
 	}
 
@@ -27,7 +27,7 @@ public class LoginPage {
 
 
 
-	public void login() throws InterruptedException {
+	public void selectCategory() throws InterruptedException {
 
 		lekkhok.click();
 		Thread.sleep(10000);

@@ -1,12 +1,14 @@
+
 package com.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.baseDrivers.BaseDriver;
 import com.baseDrivers.PageDriver;
-import com.pages.LoginPage;
+import com.pages.HomePage;
 
-public class LoginTest extends BaseDriver{
+
+public class HomePageTest extends BaseDriver{
 
 	@BeforeClass
 	public void start() throws InterruptedException {
@@ -15,8 +17,8 @@ public class LoginTest extends BaseDriver{
 	}
 
 	@Test
-	public void loginTest() throws InterruptedException {
-		LoginPage loginPage = new LoginPage();
-		loginPage.login();
+	public void SelectCategoryTest() throws InterruptedException {
+		HomePage homePage = new HomePage();
+		homePage.selectCategory();
 	}
 }
