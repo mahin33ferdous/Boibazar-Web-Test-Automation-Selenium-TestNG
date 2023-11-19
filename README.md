@@ -51,3 +51,14 @@ Click =>Binaries
 
 
 # Report and Screenshots
+
+![Boibazar_snap1](https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/2f469411-150e-4108-af7d-e34b37c337f7)
+
+
+
+![Boibazar_snap2](https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/febe1476-32ac-4e21-b330-db8ad4570e9f)
+
+
+
+![Boibazar_snap3](https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/319c7425-a025-4283-99ee-55262978b44c)
+
