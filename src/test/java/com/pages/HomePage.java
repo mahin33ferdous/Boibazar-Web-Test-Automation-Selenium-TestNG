@@ -66,7 +66,7 @@ public class HomePage {
 			test.info("verify lekkhok menu is visible");
 			if (lekkhok.isDisplayed()) {
 				lekkhok.click();
-				Thread.sleep(10000);
+				Thread.sleep(3000);
 				passCase("Lekkhok option clicked");
 
 				try {

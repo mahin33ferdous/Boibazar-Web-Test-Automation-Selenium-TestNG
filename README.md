@@ -49,6 +49,8 @@ Click =>Binaries
 
 **Here is the automation video of the project:** 
 
+https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/57414a57-2bbb-4298-a530-87a00c7858c2
+
 
 # Report and Screenshots
 

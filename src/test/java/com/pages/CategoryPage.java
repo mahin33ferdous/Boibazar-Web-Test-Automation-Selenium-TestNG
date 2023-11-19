@@ -63,7 +63,7 @@ public class CategoryPage {
 			test.info("verify Add to cart is visible");
 			if (addButton1.isDisplayed()) {
 				addButton1.click();
-				Thread.sleep(10000);
+				Thread.sleep(3000);
 				passCase("Add to cart button clicked");
 
 				try {
@@ -96,7 +96,7 @@ public class CategoryPage {
 			test.info("verify cart icon is visible");
 			if (cartIcon.isDisplayed()) {
 				cartIcon.click();
-				Thread.sleep(10000);
+				Thread.sleep(3000);
 				passCase("cart icon clicked");
 				passCaseWithSC("cart icon clicked and successfully redirectd to uponnash page", "CatIconClickedPassed");
 
