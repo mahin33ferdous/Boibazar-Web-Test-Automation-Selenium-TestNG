@@ -3,3 +3,5 @@
 .project
 /target/
 /src/main/
+/test-output/
+

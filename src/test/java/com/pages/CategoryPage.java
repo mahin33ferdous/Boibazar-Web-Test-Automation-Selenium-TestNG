@@ -16,7 +16,7 @@ public class CategoryPage {
 	
 	ExtentTest test;
 	
-	public CategoryPage() {
+	public CategoryPage(ExtentTest test) {
 		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
 		this.test = test;
 	}
@@ -55,22 +55,73 @@ public class CategoryPage {
 		String dest = System.getProperty("user.dir") + "\\screenshots\\" + ""+scName+".png";
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(dest).build());
 	}
-
-
-	public void AddToCartButton() throws InterruptedException {
-		
-		addButton1.click();
-		Thread.sleep(3000);
-		addButton2.click();
-		Thread.sleep(3000);
-	}
 	
-	public void ViewCart() throws InterruptedException {
+	@SuppressWarnings("static-access")
+	public void AddToCartButton() throws InterruptedException, IOException {
+		
+		try {
+			test.info("verify Add to cart is visible");
+			if (addButton1.isDisplayed()) {
+				addButton1.click();
+				Thread.sleep(10000);
+				passCase("Add to cart button clicked");
 
-		cartIcon.click();
-		Thread.sleep(3000);
+				try {
+					test.info("verify Add to cart button is visible");
+					if (addButton2.isDisplayed()) {
+						addButton2.click();
+						Thread.sleep(3000);
+						passCase("Add to cart button clicked");
+
+					}
+				} catch (Exception e) {
+					failCase("Add to cart button was not locateable. Please check the error message", "AddToCartButton2fail");
+				}
+
+			}
+		} catch (Exception e) {
+			failCase("Add to cart button was not locateable. Please check the error message", "AddToCartButton1fail");
+		}
 
 	}
+
+
+
+
+//	public void AddToCartButton() throws InterruptedException {
+//		
+//		addButton1.click();
+//		Thread.sleep(3000);
+//		addButton2.click();
+//		Thread.sleep(3000);
+//	}
+//
+	
+	@SuppressWarnings("static-access")
+	public void ViewCart() throws InterruptedException, IOException {
+		
+		try {
+			test.info("verify cart icon is visible");
+			if (cartIcon.isDisplayed()) {
+				cartIcon.click();
+				Thread.sleep(10000);
+				passCase("cart icon clicked");
+				passCaseWithSC("cart icon clicked and successfully redirectd to uponnash page", "CatIconClickedPassed");
+
+			}
+		} catch (Exception e) {
+			failCase("cart icon was not locateable. Please check the error message", "CatIconClickedfail");
+		}
+
+	}
+
+
+//	public void ViewCart() throws InterruptedException {
+//
+//		cartIcon.click();
+//		Thread.sleep(3000);
+//
+//	}
 }
 
 

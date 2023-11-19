@@ -3,6 +3,7 @@ package com.tests;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,14 +28,14 @@ public class CategoryPageTest extends BaseDriver{
 		PageDriver.getCurrentDriver().get(url);
 		Thread.sleep(5000);
 		report = ExtentFactory.getInstance();
-		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Boibazar category selection</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
+		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Boibazar add to cart and view cart</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
 
 	}
 
 	@Test(priority=1)
 	public void AddToCart() throws InterruptedException, IOException {
-		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>LOGIN</b></p>");
-		CategoryPage categoryPage = new CategoryPage();
+		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>AddToCart</b></p>");
+		CategoryPage categoryPage = new CategoryPage(childTest);
 		HomePage homePage = new HomePage(childTest);
 		homePage.selectCategory();
 		categoryPage.AddToCartButton();
@@ -43,9 +44,15 @@ public class CategoryPageTest extends BaseDriver{
 	
 
 	@Test(priority=2)
-	public void ViewCart() throws InterruptedException {
-		CategoryPage categoryPage = new CategoryPage();
+	public void ViewCart() throws InterruptedException, IOException {
+		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>ViewCart</b></p>");
+		CategoryPage categoryPage = new CategoryPage(childTest);
 		categoryPage.ViewCart();
+	}
+	
+	@AfterClass
+	public void report() {
+		report.flush();
 	}
 
 }
