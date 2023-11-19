@@ -88,14 +88,6 @@ public class CategoryPage {
 
 
 
-//	public void AddToCartButton() throws InterruptedException {
-//		
-//		addButton1.click();
-//		Thread.sleep(3000);
-//		addButton2.click();
-//		Thread.sleep(3000);
-//	}
-//
 	
 	@SuppressWarnings("static-access")
 	public void ViewCart() throws InterruptedException, IOException {
@@ -116,12 +108,6 @@ public class CategoryPage {
 	}
 
 
-//	public void ViewCart() throws InterruptedException {
-//
-//		cartIcon.click();
-//		Thread.sleep(3000);
-//
-//	}
 }
 
 

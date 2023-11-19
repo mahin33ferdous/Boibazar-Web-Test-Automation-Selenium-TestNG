@@ -101,15 +101,6 @@ public class HomePage {
 	}
 
 
-//	public void selectCategory() throws InterruptedException {
-//
-//		lekkhok.click();
-//		Thread.sleep(10000);
-//		bishoy.click();
-//		Thread.sleep(3000);
-//		
-//		uponnash.click();
-//		Thread.sleep(3000);
-//	}
+
 
 }
