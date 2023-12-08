@@ -2,21 +2,26 @@ package com.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import com.baseDrivers.BaseDriver;
 import com.baseDrivers.PageDriver;
-import com.pages.LoginPage;
+import com.pages.RegisterPage;
 
-public class LoginTest extends BaseDriver{
 
+
+public class RegisterPageTest extends BaseDriver{
+	
+	RegisterPage registerPage;
+	
 	@BeforeClass
 	public void start() throws InterruptedException {
 		PageDriver.getCurrentDriver().get(url);
 		Thread.sleep(5000);
 	}
 
-	@Test(priority=1, description = "Varify User can't logged with ")
+	@Test
 	public void loginTest() throws InterruptedException {
-		LoginPage loginPage = new LoginPage();
-		loginPage.login("Mahin","1234");
+		registerPage = new RegisterPage();
+		registerPage.register("Mahin","shoily@gmail","1234","1234");
 	}
 }
