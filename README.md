@@ -10,6 +10,7 @@
 - **Select category from menu** </br>
 - **Add to cart** </br>
 - **View cart** </br>
+- **Sign In** </br>
 
 
 
