@@ -59,7 +59,7 @@ https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/a
 
 <img src="https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/febe1476-32ac-4e21-b330-db8ad4570e9f"         alt="Boibazar_snap2" width="500" height="400">
 
- <img src="https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/319c7425-a025-4283-99ee-55262978b44c"         alt="Boibazar_snap3" width="500" height="400">
+ <img src="https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/319c7425-a025-4283-99ee-55262978b44c"         alt="Boibazar_snap3" width="500" height="200">
 </p>
 
 
