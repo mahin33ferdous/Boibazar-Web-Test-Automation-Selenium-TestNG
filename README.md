@@ -65,6 +65,8 @@ https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/a
 </p>
 
 
-**Failed sign in test:** 
+**Sign in test for error validation:** 
 
-![Failed](https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/5c124447-a0e3-4b52-984c-817f8bc87a2c)
+![errorValidate](https://github.com/mahin33ferdous/Boibazar-Web-Test-Automation-Selenium-TestNG/assets/108746973/2bbf3bd4-509f-44ed-b9f2-bd61a66f689c)
+
+
